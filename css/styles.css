@@ -1,0 +1,244 @@
+/***************************************************************
+	EN COURS DE MODIF
+		** desoler pour le désordre **
+***************************************************************/
+
+/***************************************************************
+Homogénéité des "boîtes" HTML
+***************************************************************/
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+/***************************************************************
+Taille de police "responsive"
+***************************************************************/
+
+html {
+    font-size: 0.625em;
+    font-size: calc(1em * 0.625); /*pour résoudre des bugs IE*/
+}
+
+body {
+    font-size: 1.6em; 
+}
+
+
+/**********************************************
+*           PAGE D'ACCUEIL                    *
+**********************************************/
+body{
+    background: lightgrey;
+}
+.accueil{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+.contrect{
+    margin: 0;
+    width: 100%;
+}
+.rect{
+    height: 25vh;
+    background: #fff;
+    border: 1px ridge black;  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.linkPage{
+    text-align: center;   
+}
+.start{
+    
+}
+.img_p1{
+    width: 70%;
+    filter: grayscale(100%);
+}
+.sega_p1:hover, .sega_p1:active{
+   filter: drop-shadow(0 0 50px #13579e);
+}
+.nintendo_p1:hover{
+   filter: drop-shadow(0 0  50px #ed1c24);
+}
+.playstation_p1:hover{
+   filter: drop-shadow(0 0 50px #003791);
+}
+.xbox_p1:hover{
+   filter: drop-shadow(0 0  50px #9cf82a);
+}
+
+
+
+/**********************************************
+*           PAGE DES CONSOLES                 *
+**********************************************/
+
+video{
+    width: 100%;
+    max-height: 300px;
+}
+.lienAccueil{
+    position: fixed;
+    z-index: 999;
+    max-width: 40%;
+}
+.img-desConsoles{
+    max-width: 100%;
+}
+.divImgConsoles{
+    margin: auto;   
+}
+.infoConsoles{
+    margin: auto;
+}
+.art-1{
+    margin-top: 10%;
+    margin-bottom: 10%; 
+}
+p{
+    color: #fff;
+}
+h2{
+    text-align: center;
+    text-decoration: line-through;
+    text-shadow: 0 0 3px#fff;
+}
+/**********************************************
+*           PAGE PLAYSTATION                  *
+**********************************************/
+
+#backPs{
+    background: url(../img/bg/223069.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.infoConsolesPs:hover{
+    background: #ffdd57;
+    opacity: .8;
+    border-radius: 25px;
+}
+#backPs p{
+    font-family: 'Graduate', cursive;
+}
+
+/**********************************************
+*           PAGE XBOX                         *
+**********************************************/
+#backXb{
+    background: url(../img/bg/thumb.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.infoConsolesXb:hover{
+    background: #9cf82a;
+    opacity: .8;
+    border-radius: 25px;
+}
+#backXb p{
+    font-family: 'Righteous', cursive;
+}
+/**********************************************
+*           PAGE SEGA                         *
+**********************************************/
+#backS{
+    background: url(../img/bg/Se03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.infoConsolesS:hover{
+    background: #0066f4;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    opacity: .9;
+}
+#backS p{
+    color: #fff;
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 1.2em;
+}
+
+/**********************************************
+*           PAGE NINTENDO                     *
+**********************************************/
+#backN{
+    background: url(../img/bg/Nin02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.infoConsolesN:hover{
+    background: #6457a8;
+    opacity: .9;
+    border-radius: 50px;
+}
+#backN p{
+    font-family: 'Gravitas One', cursive;
+}
+/**********************************************
+*           FOOTER                            *
+**********************************************/
+
+footer{
+    border-top: 4px ridge #C0C0C0;
+    background: radial-gradient(#C0C0C0, #868686, #6B6B6B);
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul li ,footer div{
+    padding: 3%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/****************************************************
+*                                                   *
+*                       MEDIA QUERIES               *
+*                                                   *
+****************************************************/
+
+/***********************
+    PAGE D'ACCUEIL
+***********************/
+
+@media (min-width: 601px){
+    .rect{
+        height: auto;
+    }
+
+
+/***********************
+    Consoles
+***********************/ 
+    .lienAccueil{
+        max-width: 100%;
+    }
+    p{
+    color: #000;
+    }   
+}
