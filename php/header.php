@@ -10,5 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Allan|Bungee+Inline|Fascinate+Inline|Faster+One|Graduate|Gravitas+One|Londrina+Solid|Righteous|Londrina+Shadow|Wallpoet&display=swap" rel="stylesheet"> 
     <title>Au Vieux Gamer</title>
     <meta name="description" content=".................................">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>

@@ -1,4 +1,4 @@
-<?php include '../php/header.php'; ?>
+<?php require '../php/header.php'; ?>
 <body id="backPs">
 	<header>
 		<a href="../index.html"><img src="../img/AVG_pa.png" class="lienAccueil" alt="logo du site, dirige vers la page d'accueil"></a>

@@ -58,7 +58,26 @@ body{
     text-align: center;   
 }
 .start{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start a{
+    color: #171717;
+    border: 1px outset #171717;
+    padding: 0 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    background: #E8E8E8; 
+    box-shadow: -webkit-box-shadow: -3px 3px 3px 1px rgba(23,23,23,1);
+                -moz-box-shadow: -3px 3px 3px 1px rgba(23,23,23,1);
+                box-shadow: -3px 3px 3px 1px rgba(23,23,23,1);
+}
+.start a:hover{
+    box-shadow: -webkit-box-shadow: inset -1px 1px 3px 1px rgba(23,23,23,1);
+                -moz-box-shadow: inset -1px 1px 3px 1px rgba(23,23,23,1);
+                box-shadow: inset -1px 1px 3px 1px rgba(23,23,23,1);
+
 }
 .img_p1{
     width: 70%;
@@ -77,8 +96,63 @@ body{
    filter: drop-shadow(0 0  50px #9cf82a);
 }
 
+/**********************************************
+*           PAGES START                       *
+**********************************************/
+#page_start{
+    height: 100vh;
+    margin: 0;
+}
+#page_start .link_games{
+    margin-top: 3%;
+}
 
+#page_start article{
+    display: inline-block;
+    margin: 1%;
+    text-align: center;
+    background: #343a40;
+    border-radius: 0 30px;
+    width: 235px;
+}
 
+#page_start article img{
+    width: 100%;
+}
+
+#page_start article a{
+    color: rgba(255,255,255,.5);
+}
+
+#page_start article a:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,.7);
+}
+
+/**********************************************
+*           PAGES games                       *
+**********************************************/
+
+#page_start_game{
+    height: 100vh;
+    margin: 0;
+}
+
+#page_start_game main{
+    padding: 0;
+}
+
+#page_start_game .start{
+    margin-top: 20%;
+}
+
+#page_start_game .start a{
+    padding: 0 10px;
+    background: rgba(255,255,255,.2); 
+}
+#page_start_game .start a:hover{
+    color: rgba(255,255,255,.7);
+}
 /**********************************************
 *           PAGE DES CONSOLES                 *
 **********************************************/
@@ -223,6 +297,16 @@ footer ul li ,footer div{
 ****************************************************/
 
 /***********************
+    Start
+***********************/
+@media (max-width: 900px){
+    #page_start article{
+        width: 35%;
+    }
+}    
+
+
+/***********************
     PAGE D'ACCUEIL
 ***********************/
 
@@ -230,6 +314,7 @@ footer ul li ,footer div{
     .rect{
         height: auto;
     }
+
 
 
 /***********************
